@@ -9,7 +9,7 @@ export default function Navbar() {
         <header className="bg-white shadow-sm sticky top-0 z-10">
           <div className="container mx-auto px-4 md:px-6 py-4 flex items-center justify-between">
             <Link to="#" className="text-2xl font-bold text-gray-900">
-              Travelio
+              Wyjazd.dd
             </Link>
             <nav className="hidden md:flex items-center space-x-6">
               <Link to="#" className="text-gray-600 hover:text-gray-900" >
@@ -26,14 +26,18 @@ export default function Navbar() {
               </Link>
             </nav>
             <div className="flex space-x-4">
-              <Button>
-                <UserIcon className="w-5 h-5 mr-2" />
-                Log In
-              </Button>
-              <Button>
-                <UserIcon className="w-5 h-5 mr-2" />
-                Sign Up
-              </Button>
+              <Link to="/login">
+                <Button>
+                  <UserIcon className="w-5 h-5 mr-2" />
+                  Log In
+                </Button>
+              </Link>
+              <Link to="/sign-up">
+                <Button>
+                  <UserIcon className="w-5 h-5 mr-2" />
+                  Sign Up
+                </Button>
+              </Link>
             </div>
           </div>
         </header>
